@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  scroll-behavior: smooth;
+}
+
+.orange_gradient {
+  position: relative;
+  background: linear-gradient(90deg, #ffa500,  #0300b8, #ffa500); /* Repeat the gradient at the end */
+  -webkit-background-clip: text; /* For Safari  3300ff*/
+  -webkit-text-fill-color: transparent; /* For Safari */
+  background-clip: text; /* For other browsers */
+  color: #F57C00; /* Fallback for browsers that do not support background-clip */
+  
+  /* Animate the gradient */
+  background-size: 300% 100%; /* Make the background larger to allow continuous movement */
+  animation: gradientAnimation 20s linear infinite; /* Infinite, smooth linear animation */
+}
+
+.black_gradient {
+  position: relative;
+  background: linear-gradient(90deg, #747474,  #000000, #747474); /* Repeat the gradient at the end */
+  -webkit-background-clip: text; /* For Safari  3300ff*/
+  -webkit-text-fill-color: transparent; /* For Safari */
+  background-clip: text; /* For other browsers */
+  color: #000000; /* Fallback for browsers that do not support background-clip */
+  
+  /* Animate the gradient */
+  background-size: 300% 100%; /* Make the background larger to allow continuous movement */
+  animation: gradientAnimation 10s linear infinite; /* Infinite, smooth linear animation */
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 300% 50%; /* Start at the left */
+  }
+  100% {
+    background-position: 0% 50%; /* Continuously move to the right */
+  }
+}
+
+
+/* hamburger menu */
+
+/* From Uiverse.io by JulanDeAlb */ 
+.hamburger {
+  cursor: pointer;
+}
+
+.hamburger input {
+  display: none;
+}
+
+.hamburger svg {
+  /* The size of the SVG defines the overall size */
+  height: 3em;
+  /* Define the transition for transforming the SVG */
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+  fill: none;
+  stroke: #1E3A5F;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+  /* Define the transition for transforming the Stroke */
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+              stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+  stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked + svg {
+  transform: rotate(-45deg);
+}
+
+.hamburger input:checked + svg .line-top-bottom {
+  stroke-dasharray: 20 300;
+  stroke-dashoffset: -32.42;
+}
+
+
+/* dropwdown effect */
+
+.dropdown-enter {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.dropdown-enter-active {
+  height: 20rem; /* Full height of the dropdown */
+  opacity: 1;
+  transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.dropdown-exit {
+  height: 20rem;
+  opacity: 1;
+}
+
+.dropdown-exit-active {
+  height: 0;
+  opacity: 0;
+  transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+
+/* Underline animation */
+.underline-animation {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.underline-animation::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px; /* Adjust the thickness of the underline */
+  background-color: #F57C00; /* Uses the text color */
+  transition: width 0.5s ease;
+}
+
+.underline-animation:hover::after {
+  width: 100%;
+}
+
+/* arrow style */
+
+.arrow{
+  position: relative;
+  top: 0.25rem;
+  border: solid #1E3A5F;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  width: 20px;
+  height: 20px;
+  transform: rotate(-135deg);
+}
+
+/* iCon Styles */
+
+.icons svg path {
+  fill: #94A3B8;
+  transition: fill 0.5s ease;
+}
+
+.icons:hover svg path {
+  fill: #FFF; /* Twitter blue color */
+}
+
+/* Tailwind Styles */
+
+
+
+.app {
+  @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
+}
+
+.flex-center {
+    @apply flex justify-center items-center;
+  }
+  
+  .flex-start {
+    @apply flex justify-start items-start;
+  }
+  
+  .flex-end {
+    @apply flex justify-end items-center;
+  }
+  
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+
+  .td{
+    transition: 0.5s ease;
+  }
