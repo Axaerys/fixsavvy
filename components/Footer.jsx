@@ -72,13 +72,13 @@ const Footer = () => {
             Reach Us
             <div className="text-xs font-satoshi mt-2 font-normal text-slate-400 flex-between w-full max-lg:flex-col">
               <div>
-                <p>
+                <p className="mb-2">
                   Email: <span>inquiry@fixsavvy.com</span>
                 </p>
-                <p>
+                <p className="mb-2">
                   Whatsapp: <span>+971 4 123 4567</span>
                 </p>
-                <p>
+                <p className="mb-2">
                   Email: <span>inquiry@fixsavvy.com</span>
                 </p>
               </div>
@@ -94,7 +94,7 @@ const Footer = () => {
       <div className="bg-gray-950 text-slate-500 text-xs py-4 flex-center flex-wrap">
         <div className="sm:px-16 px-6 w-screen max-w-7xl mx-auto flex-between !items-start max-md:flex-col">
           <h1>Copyright, All RIghts Reserved.</h1>
-          <div className="flex-between max-md:w-full md:gap-8">
+          <div className="flex-between max-md:w-full md:gap-8 max-lg:mt-2">
             <a href="" className="td hover:text-slate-400">
               Terms and Conditions
             </a>

@@ -161,9 +161,133 @@
   fill: #FFF; /* Twitter blue color */
 }
 
+
+
+/* Login / Sign-Up Styles */
+
+.loginSection{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.loginMain{
+  background: white;
+	width: 21rem;
+	height: 36rem;
+	overflow: hidden;
+	border-radius: 10px;
+}
+#chk{
+	display: none;
+}
+.signup{
+	position: relative;
+	width:100%;
+	height: 100%;
+}
+.loginLabel{
+	color: #1E3A5F;
+	font-size: 2.3em;
+	justify-content: center;
+	display: flex;
+	margin-top: 3rem;
+  margin-bottom: 1.5rem;
+	font-weight: bold;
+	cursor: pointer;
+	transition: .5s ease-in-out;
+}
+.loginInput{
+	width: 15rem;
+	height: 2.5rem;
+	background: #FFF;
+  border: 1px solid #ffcb87;
+	justify-content: center;
+	display: flex;
+	margin: 0.5rem auto;
+	padding: 0.75rem;
+	outline: none;
+	border-radius: 5px;
+  transition-duration: 0.5s;
+}
+.loginInput:focus{
+  border: 1px solid orange;
+}
+
+/* Base styling for the checkbox input */
+input[type="radio"].checkbox {
+  appearance: none; /* Remove default checkbox styling */
+  width: 1.5rem; /* Set the width */
+  height: 1.5rem; /* Set the height */
+  border: 2px solid #ffcb87; /* Border color and size */
+  border-radius: 5px; /* Rounded corners */
+  outline: none; /* Remove outline */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition-duration: 0.5s; /* Smooth transition */
+}
+
+/* Checked state styling */
+input[type="radio"].checkbox:checked {
+  background-color: #F57C00; /* Background color when checked */
+  border-color: #F57C00; /* Border color when checked */
+}
+
+/* Add a custom checkmark using a pseudo-element */
+input[type="radio"].checkbox:checked::after {
+  content: "✓"; /* Checkmark symbol */
+  color: white; /* Checkmark color */
+  font-size: 16px; /* Adjust checkmark size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.loginButton{
+	width: 60%;
+	height: 40px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: #fff;
+	background: #1E3A5F;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 30px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .2s ease-in;
+	cursor: pointer;
+}
+
+
+.login{
+	height: 560px;
+	background: #eee;
+	border-radius: 60% / 10%;
+	transform: translateY(-150px);
+	transition: .8s ease-in-out;
+}
+.login label{
+	color: #F57C00;
+  padding-top: 0.5rem;
+	transform: scale(.6);
+}
+
+#chk:checked ~ .login{
+	transform: translateY(-560px);
+}
+#chk:checked ~ .login label{
+  padding-top: 2rem;
+	transform: scale(1);	
+}
+#chk:checked ~ .signup .signupLabel{
+	transform: scale(.6);
+}
+
+
 /* Tailwind Styles */
-
-
 
 .app {
   @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;

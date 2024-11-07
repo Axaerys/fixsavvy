@@ -69,25 +69,31 @@ const Nav = () => {
           Logo Goes here
         </a>
         <div className="flex-center gap-16">
-          <a href="#Services" className="underline-animation text-primary-blue">
+          <a
+            href="/#Services"
+            className="underline-animation text-primary-blue"
+          >
             Our Services
           </a>
-          <a href="#Packages" className="underline-animation text-primary-blue">
+          <a
+            href="/#Packages"
+            className="underline-animation text-primary-blue"
+          >
             Packages
           </a>
           <a
-            href="#TopFixers"
+            href="/#TopFixers"
             className="underline-animation text-primary-blue"
           >
             Top Fixers
           </a>
           <a
-            href="#ContactUs"
+            href="/#ContactUs"
             className="underline-animation text-primary-blue"
           >
             Contact Us
           </a>
-          <a href="#">
+          <a href="/Login">
             <NavButton
               action={"Log In"}
               borderColor={"border-primary-blue"}
@@ -125,11 +131,11 @@ const Nav = () => {
                 : "dropdown-exit dropdown-exit-active"
             } px-8 py-4 rounded-xl flex items-start justify-center flex-col gap-8  shadow-lg bg-white w-56 absolute right-6 top-16 overflow-hidden`}
           >
-            <a href="#Services">Our Services</a>
-            <a href="#Packages">Packages</a>
-            <a href="#">Top Fixers</a>
-            <a href="#">Contact Us</a>
-            <a href="#">
+            <a href="/#Services">Our Services</a>
+            <a href="/#Packages">Packages</a>
+            <a href="/#TopFixers">Top Fixers</a>
+            <a href="/#">Contact Us</a>
+            <a href="/Login">
               <NavButton
                 action={"Log In"}
                 borderColor={"border-primary-blue"}
