@@ -81,7 +81,7 @@ const Footer = () => {
         </div>
         <div className="md:w-[32%] max-md:mb-6">
           <h1 className="  font-inter font-bold mb-12 text-slate-300">
-            Reach Us!
+            Reach Us
             <div className="text-xs font-satoshi mt-2 font-normal text-slate-400 flex-between w-full max-lg:flex-col">
               <div>
                 <p className="mb-2">
