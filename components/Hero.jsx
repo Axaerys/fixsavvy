@@ -21,7 +21,7 @@ const Hero = () => {
           </div>
         </h1>
         <p className="font-satoshi text-xl text-slate-600">
-          A place for all your home maintenance needs.
+          A subtext will be going to go somewhere here.
         </p>
         <div className="flex justify-start items-start max-lg:flex-col gap-4 max-md:items-center">
           <a href="https://www.apple.com/app-store" target="_blank">

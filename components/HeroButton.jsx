@@ -21,39 +21,40 @@ const HeroButton = ({
   }, [logoIcon]); // Runs only when logoIcon changes
 
   console.log(iconColor);
-  const handleScroll = () => {
-    const buttonPosition = document
-      .getElementById("hero-button")
-      .getBoundingClientRect();
-    // if (
-    //   buttonPosition.top >= 0 &&
-    //   buttonPosition.bottom <= window.innerHeight
-    // ) {
-    //   setScale("scale-100"); // Scale to full size if in view
-    // } else {
-    //   setScale("scale-0"); // Scale down if out of view
-    // }
-  };
 
-  useEffect(() => {
-    // Initial visibility check and scale up after a short delay
-    handleScroll();
-    const timeout = setTimeout(() => setScale("scale-100"), 0);
+  // const handleScroll = () => {
+  //   const buttonPosition = document
+  //     .getElementById("hero-button")
+  //     .getBoundingClientRect();
+  //   // if (
+  //   //   buttonPosition.top >= 0 &&
+  //   //   buttonPosition.bottom <= window.innerHeight
+  //   // ) {
+  //   //   setScale("scale-100"); // Scale to full size if in view
+  //   // } else {
+  //   //   setScale("scale-0"); // Scale down if out of view
+  //   // }
+  // };
 
-    // Add scroll event listener
-    window.addEventListener("scroll", handleScroll);
+  // useEffect(() => {
+  //   // Initial visibility check and scale up after a short delay
+  //   handleScroll();
+  //   const timeout = setTimeout(() => setScale("scale-100"), 0);
 
-    // Cleanup on unmount
-    return () => {
-      clearTimeout(timeout);
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //   // Add scroll event listener
+  //   window.addEventListener("scroll", handleScroll);
+
+  //   // Cleanup on unmount
+  //   return () => {
+  //     clearTimeout(timeout);
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
   return (
     <section
       id="hero-button"
-      className={`group border-2 ${borderColor} rounded-lg px-4 py-2 w-48 flex-center gap-2 td ${scale} hover:scale-95 bg-white ${color} ${bgColor} hover:text-white cursor-pointer`}
+      className={`group border-2 ${borderColor} rounded-lg px-4 py-2 w-48 flex-center gap-2 td  hover:scale-95 bg-white ${color} ${bgColor} hover:text-white cursor-pointer`}
       onMouseEnter={() => setIconColor2("white")}
       onMouseLeave={() => setIconColor2(iconColor)}
     >
