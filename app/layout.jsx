@@ -5,15 +5,14 @@ import "@styles/globals.css";
 
 export const metadata = {
   title: "FixSavvy",
-  description: "Get a handyman / fixer right now!",
+  description: "Maintenance Business",
 };
 
 const RootLayout = ({ children }) => {
-  console.log("Layout mounted");
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="@public/favicon.ico" />
       </head>
 
       <body suppressHydrationWarning>

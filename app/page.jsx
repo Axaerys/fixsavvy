@@ -6,7 +6,6 @@ import ContactUs from "@components/ContactUs";
 import Footer from "@components/Footer";
 
 const Home = () => {
-  console.log("Page Mounted");
   return (
     <section className="w-full h-full ">
       <Hero />
