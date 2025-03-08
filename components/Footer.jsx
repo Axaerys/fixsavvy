@@ -45,13 +45,15 @@ const Footer = () => {
                 Log In
               </a>
               <a
-                href="#PageNotAvailableYet"
+                href="https://www.apple.com/app-store"
+                target="_blank"
                 className="hover:text-slate-200 td"
               >
                 Get it on IOS
               </a>
               <a
-                href="#PageNotAvailableYet"
+                href="https://play.google.com"
+                target="_blank"
                 className="hover:text-slate-200 td"
               >
                 Get it on Android

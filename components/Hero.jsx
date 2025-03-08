@@ -4,7 +4,6 @@ import Image from "next/image";
 import AppleIcon from "@components/AppleIcon.jsx";
 
 const Hero = () => {
-  console.log("Hero component mounted");
   return (
     <section className="flex justify-between items-center h-screen w-full">
       <div className="w-[50%] max-md:w-full flex flex-col gap-8 ">
