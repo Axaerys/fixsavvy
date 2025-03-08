@@ -1,4 +1,4 @@
-import InstaIcon from "@public/instaicon";
+import InstaIcon from "@public/InstaIcon";
 import LinkedInIcon from "@public/LinkedInIcon";
 import TwitterIcon from "@public/TwitterIcon";
 
