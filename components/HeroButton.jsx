@@ -13,14 +13,7 @@ const HeroButton = ({
   iconColor,
 }) => {
   const [scale, setScale] = useState("scale-0"); // Start at scale-0
-  const [iconNumber, setIconNumber] = useState(false);
   const [iconColor2, setIconColor2] = useState(iconColor);
-
-  useEffect(() => {
-    setIconNumber(logoIcon !== 0);
-  }, [logoIcon]); // Runs only when logoIcon changes
-
-  console.log(iconColor);
 
   // const handleScroll = () => {
   //   const buttonPosition = document
@@ -54,12 +47,12 @@ const HeroButton = ({
   return (
     <section
       id="hero-button"
-      className={`group border-2 ${borderColor} rounded-lg px-4 py-2 w-48 flex-center gap-2 td  hover:scale-95 bg-white ${color} ${bgColor} hover:text-white cursor-pointer`}
+      className={`group border-2 ${borderColor} rounded-lg px-4 py-2 w-48 flex-center gap-2 td hover:scale-95 bg-white ${color} ${bgColor} hover:text-white cursor-pointer`}
       onMouseEnter={() => setIconColor2("white")}
       onMouseLeave={() => setIconColor2(iconColor)}
     >
       <div className="h-8 w-8">
-        {iconNumber ? (
+        {logoIcon === 1 ? (
           <GooglePlayIcon
             color={iconColor2}
             className="group-hover:fill-white"

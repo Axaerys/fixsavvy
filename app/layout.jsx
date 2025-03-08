@@ -9,6 +9,7 @@ export const metadata = {
 };
 
 const RootLayout = ({ children }) => {
+  console.log("Layout mounted");
   return (
     <html lang="en">
       <head>

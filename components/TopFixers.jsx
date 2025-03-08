@@ -1,7 +1,8 @@
 import FixerCard from "./FixerCard";
-import image1 from "@public/fixers/Bing.png";
-import image2 from "@public/fixers/Bob.png";
-import image3 from "@public/fixers/Daei.png";
+// import image1 from "@public/fixers/Bing.png";
+// import image2 from "@public/fixers/Bob.png";
+// import image3 from "@public/fixers/Daei.png";
+import tempImage from "@public/fixers/sampleImage.jpg";
 
 const TopFixers = () => {
   return (
@@ -15,24 +16,27 @@ const TopFixers = () => {
       <div className="flex-between !items-center h-full max-md:flex-col">
         <FixerCard
           borderColor="border-yellow-500 "
-          name={"Bing Bing"}
+          name={"John Doe"}
           rating={"4.9 / 5"}
           votes={75}
-          image={image1}
+          image={tempImage}
+          // image={image1}
         />
         <FixerCard
           borderColor="border-gray-400"
-          name={"Arash Saeedi Goraghani"}
+          name={"Jack Doe"}
           rating={"4.8 / 5"}
-          votes={69}
-          image={image2}
+          votes={68}
+          image={tempImage}
+          // image={image2}
         />
         <FixerCard
           borderColor="border-yellow-800"
-          name={"Daei Phoenix"}
+          name={"Joe Doe"}
           rating={"4.1 / 5"}
           votes={34}
-          image={image3}
+          image={tempImage}
+          // image={image3}
         />
       </div>
     </section>
