@@ -12,7 +12,7 @@ const RootLayout = ({ children }) => {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="@public/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
       </head>
 
       <body suppressHydrationWarning>

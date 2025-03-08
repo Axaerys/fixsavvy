@@ -83,20 +83,14 @@ const Nav = () => {
           FixSavvy
         </a>
         <div className="flex-center gap-16">
-          <a
-            href="/#Services"
-            className="underline-animation text-primary-blue"
-          >
+          <a href="#Services" className="underline-animation text-primary-blue">
             Our Services
           </a>
-          <a
-            href="/#Packages"
-            className="underline-animation text-primary-blue"
-          >
+          <a href="#Packages" className="underline-animation text-primary-blue">
             Packages
           </a>
           <a
-            href="/#TopFixers"
+            href="#TopFixers"
             className="underline-animation text-primary-blue"
           >
             Top Fixers
@@ -107,7 +101,7 @@ const Nav = () => {
           >
             Contact Us
           </a> */}
-          <a href="/Login">
+          <a href="./Login">
             <NavButton
               action={"Log In / Sign Up"}
               borderColor={"border-primary-blue"}
