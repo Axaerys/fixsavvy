@@ -1,6 +1,8 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
 import NavButton from "./NavButton";
+import Image from "next/image";
+import logoImage from "@public/logo.png";
 
 const Nav = () => {
   // const [scrolled, setScrolled] = useState(false);
@@ -59,14 +61,26 @@ const Nav = () => {
   return (
     <section
       className={
-        `absolute top-0 w-full flex-center bg-white z-20 h-16 font-satoshi  `
+        `absolute top-0 w-full flex-center bg-white z-20 h-16 font-satoshi py-12 `
         // ${scrolled ? "shadow-md" : "shadow-none"} move this above to work
       }
     >
       {/* laptop view */}
-      <div className="flex-between w-[80rem] px-16 max-w-7xl visible max-lg:hidden">
-        <a href="/" className="text-primary-orange">
-          Logo Goes here
+      <div className="flex-between w-[80rem] px-16 max-w-7xl visible max-lg:hidden ">
+        <a
+          href="/"
+          className="text-primary-orange flex flex-center gap-2 font-bold font-satoshi text-lg  td hover:scale-95"
+        >
+          <div className="h-16 w-16">
+            <Image
+              src={logoImage}
+              alt="FixSavvy Logo"
+              layout="responsive"
+              width={500}
+              height={500}
+            />
+          </div>
+          FixSavvy
         </a>
         <div className="flex-center gap-16">
           <a
@@ -87,15 +101,15 @@ const Nav = () => {
           >
             Top Fixers
           </a>
-          <a
+          {/* <a
             href="/#ContactUs"
             className="underline-animation text-primary-blue"
           >
             Contact Us
-          </a>
+          </a> */}
           <a href="/Login">
             <NavButton
-              action={"Log In"}
+              action={"Log In / Sign Up"}
               borderColor={"border-primary-blue"}
               color={"text-primary-blue"}
             />
@@ -104,8 +118,20 @@ const Nav = () => {
       </div>
       {/* mobile/tablet view */}
       <div className="flex-between w-screen mt-4 px-6 sm:px-16  visible lg:hidden">
-        <a href="/" className="text-primary-orange">
-          Logo Goes here
+        <a
+          href="/"
+          className="text-primary-orange flex flex-center gap-2 font-bold font-satoshi text-lg  td hover:scale-95"
+        >
+          <div className="h-16 w-16">
+            <Image
+              src={logoImage}
+              alt="FixSavvy Logo"
+              layout="responsive"
+              width={500}
+              height={500}
+            />
+          </div>
+          FixSavvy
         </a>
         {/* hamburger menu start */}
         <div>
@@ -129,15 +155,15 @@ const Nav = () => {
               visible === "!flex"
                 ? "dropdown-enter dropdown-enter-active"
                 : "dropdown-exit dropdown-exit-active"
-            } px-8 py-4 rounded-xl flex items-start justify-center flex-col gap-8  shadow-lg bg-white w-56 absolute right-6 top-16 overflow-hidden`}
+            } px-8 py-4 rounded-xl flex items-start justify-center flex-col gap-8 border-2 border-orange-100 shadow-lg bg-white w-56 absolute right-6 top-20 overflow-hidden`}
           >
             <a href="/#Services">Our Services</a>
             <a href="/#Packages">Packages</a>
             <a href="/#TopFixers">Top Fixers</a>
-            <a href="/#">Contact Us</a>
+            {/* <a href="/#">Contact Us</a> */}
             <a href="/Login">
               <NavButton
-                action={"Log In"}
+                action={"Log In / Sign Up"}
                 borderColor={"border-primary-blue"}
                 color={"text-primary-blue"}
               />

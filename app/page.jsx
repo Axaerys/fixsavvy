@@ -12,7 +12,7 @@ const Home = () => {
       <Services />
       <Packages />
       <TopFixers />
-      <ContactUs />
+      {/* <ContactUs /> */}
       {/* <Footer /> */}
     </section>
   );

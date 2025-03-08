@@ -1,9 +1,26 @@
 "use client";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
+import AppleIcon from "@components/AppleIcon.jsx";
+import GooglePlayIcon from "@components/GooglePlayIcon.jsx";
 
-const HeroButton = ({ action, borderColor, color, bgColor }) => {
+const HeroButton = ({
+  action,
+  borderColor,
+  color,
+  bgColor,
+  logoIcon,
+  iconColor,
+}) => {
   const [scale, setScale] = useState("scale-0"); // Start at scale-0
+  const [iconNumber, setIconNumber] = useState(false);
+  const [iconColor2, setIconColor2] = useState(iconColor);
 
+  useEffect(() => {
+    setIconNumber(logoIcon !== 0);
+  }, [logoIcon]); // Runs only when logoIcon changes
+
+  console.log(iconColor);
   const handleScroll = () => {
     const buttonPosition = document
       .getElementById("hero-button")
@@ -36,9 +53,24 @@ const HeroButton = ({ action, borderColor, color, bgColor }) => {
   return (
     <section
       id="hero-button"
-      className={`border-2 ${borderColor} rounded-lg px-4 py-2 w-48  td ${scale} hover:scale-95  bg-white ${color} ${bgColor} hover:text-white cursor-pointer`}
+      className={`group border-2 ${borderColor} rounded-lg px-4 py-2 w-48 flex-center gap-2 td ${scale} hover:scale-95 bg-white ${color} ${bgColor} hover:text-white cursor-pointer`}
+      onMouseEnter={() => setIconColor2("white")}
+      onMouseLeave={() => setIconColor2(iconColor)}
     >
-      <div className={`font-satoshi text-xl text-center `}>{action}</div>
+      <div className="h-8 w-8">
+        {iconNumber ? (
+          <GooglePlayIcon
+            color={iconColor2}
+            className="group-hover:fill-white"
+          />
+        ) : (
+          <AppleIcon color={iconColor2} className="group-hover:fill-white" />
+        )}
+      </div>
+      <div>
+        <div className="font-satoshi text-xs text-left">Get it on</div>
+        <div className="font-satoshi text-xl text-center -mt-1">{action}</div>
+      </div>
     </section>
   );
 };

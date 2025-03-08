@@ -1,8 +1,8 @@
 import React from "react";
 const Services = () => {
   return (
-    <section className="py-16 min-h-screen" id="Services">
-      <h1 className=" text-3xl font-inter font-bold mb-12 black_gradient">
+    <section className="py-16 min-h-screen flex-center flex-col" id="Services">
+      <h1 className=" text-3xl font-inter font-bold mb-12 black_gradient justify-start w-full">
         Our Services:
       </h1>
       <div className="flex-between max-md:flex-col">

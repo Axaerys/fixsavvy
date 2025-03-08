@@ -2,8 +2,8 @@ import React from "react";
 import PackageCard from "./PackageCard";
 const Services = () => {
   return (
-    <section className="py-16 min-h-screen" id="Packages">
-      <h1 className=" text-3xl font-inter font-bold mb-12 black_gradient">
+    <section className="py-16 min-h-screen flex-center flex-col" id="Packages">
+      <h1 className=" text-3xl font-inter font-bold mb-12 black_gradient justify-start w-full">
         Our Packages:
       </h1>
       <div className="flex-between flex-wrap max-md:flex-col">

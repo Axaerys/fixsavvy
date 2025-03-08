@@ -38,30 +38,42 @@ const Footer = () => {
               </a>
             </div>
             <div className="flex flex-col gap-2 text-center">
-              <a href="#ContactUs" className="hover:text-slate-200 td">
+              <a href="/Login" className="hover:text-slate-200 td">
                 Sign Up
               </a>
-              <a href="#ContactUs" className="hover:text-slate-200 td">
+              <a href="/Login" className="hover:text-slate-200 td">
                 Log In
               </a>
-              <a href="#ContactUs" className="hover:text-slate-200 td">
-                Get a Fixer
+              <a
+                href="#PageNotAvailableYet"
+                className="hover:text-slate-200 td"
+              >
+                Get it on IOS
               </a>
-              <a href="#ContactUs" className="hover:text-slate-200 td">
-                Become a Fixer
+              <a
+                href="#PageNotAvailableYet"
+                className="hover:text-slate-200 td"
+              >
+                Get it on Android
               </a>
             </div>
             <div className="flex flex-col gap-2 text-end">
-              <a href="#ContactUs" className="hover:text-slate-200 td">
+              <a href="/" className="hover:text-slate-200 td">
                 Home
               </a>
-              <a href="#ContactUs" className="hover:text-slate-200 td">
+              <a
+                href="#PageNotAvailableYet"
+                className="hover:text-slate-200 td"
+              >
                 Another Link
               </a>
-              <a href="#ContactUs" className="hover:text-slate-200 td">
+              <a
+                href="#PageNotAvailableYet"
+                className="hover:text-slate-200 td"
+              >
                 Another Link
               </a>
-              <a href="#ContactUs" className="hover:text-slate-200 td">
+              <a href="/" className="hover:text-slate-200 td">
                 Back to Top
               </a>
             </div>
@@ -76,10 +88,10 @@ const Footer = () => {
                   Email: <span>inquiry@fixsavvy.com</span>
                 </p>
                 <p className="mb-2">
-                  Whatsapp: <span>+971 4 123 4567</span>
+                  Phone: <span>+971 4 123 4567</span>
                 </p>
                 <p className="mb-2">
-                  Email: <span>inquiry@fixsavvy.com</span>
+                  Location: <span>43rd, Privet Rd, Chicago</span>
                 </p>
               </div>
               <div className="flex-between gap-8 max-md:mt-3">
@@ -95,10 +107,16 @@ const Footer = () => {
         <div className="sm:px-16 px-6 w-screen max-w-7xl mx-auto flex-between !items-start max-md:flex-col">
           <h1>Copyright, All RIghts Reserved.</h1>
           <div className="flex-between max-md:w-full md:gap-8 max-lg:mt-2">
-            <a href="" className="td hover:text-slate-400">
+            <a
+              href="#PopUpNotImplementedYet"
+              className="td hover:text-slate-400"
+            >
               Terms and Conditions
             </a>
-            <a href="" className="td hover:text-slate-400">
+            <a
+              href="#PopUpNotImplementedYet"
+              className="td hover:text-slate-400"
+            >
               Privacy and Cookie Policy
             </a>
           </div>
