@@ -95,13 +95,13 @@ const Footer = () => {
                 </p>
               </div>
               <div className="flex-between gap-8 max-md:mt-3">
-                <a href="https://instagram.com">
+                <a href="https://instagram.com" target="_blank">
                   <InstaIcon />
                 </a>
-                <a href="https://x.com">
+                <a href="https://x.com" target="_blank">
                   <TwitterIcon />
                 </a>
-                <a href="https://linkedin.com">
+                <a href="https://linkedin.com" target="_blank">
                   <LinkedInIcon />
                 </a>
               </div>
