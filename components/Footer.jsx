@@ -38,10 +38,10 @@ const Footer = () => {
               </a>
             </div>
             <div className="flex flex-col gap-2 text-center">
-              <a href="/Login" className="hover:text-slate-200 td">
+              <a href="./Login" className="hover:text-slate-200 td">
                 Sign Up
               </a>
-              <a href="/Login" className="hover:text-slate-200 td">
+              <a href="./Login" className="hover:text-slate-200 td">
                 Log In
               </a>
               <a
@@ -58,7 +58,7 @@ const Footer = () => {
               </a>
             </div>
             <div className="flex flex-col gap-2 text-end">
-              <a href="/" className="hover:text-slate-200 td">
+              <a href="./" className="hover:text-slate-200 td">
                 Home
               </a>
               <a
@@ -73,7 +73,7 @@ const Footer = () => {
               >
                 Another Link
               </a>
-              <a href="/" className="hover:text-slate-200 td">
+              <a href="./" className="hover:text-slate-200 td">
                 Back to Top
               </a>
             </div>
@@ -95,9 +95,15 @@ const Footer = () => {
                 </p>
               </div>
               <div className="flex-between gap-8 max-md:mt-3">
-                <InstaIcon />
-                <TwitterIcon />
-                <LinkedInIcon />
+                <a href="https://instagram.com">
+                  <InstaIcon />
+                </a>
+                <a href="https://x.com">
+                  <TwitterIcon />
+                </a>
+                <a href="https://linkedin.com">
+                  <LinkedInIcon />
+                </a>
               </div>
             </div>
           </h1>

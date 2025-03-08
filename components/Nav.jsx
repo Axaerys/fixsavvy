@@ -68,7 +68,7 @@ const Nav = () => {
       {/* laptop view */}
       <div className="flex-between w-[80rem] px-16 max-w-7xl visible max-lg:hidden ">
         <a
-          href="/"
+          href="./"
           className="text-primary-orange flex flex-center gap-2 font-bold font-satoshi text-lg  td hover:scale-95"
         >
           <div className="h-16 w-16">
@@ -96,7 +96,7 @@ const Nav = () => {
             Top Fixers
           </a>
           {/* <a
-            href="/#ContactUs"
+            href="#ContactUs"
             className="underline-animation text-primary-blue"
           >
             Contact Us
@@ -113,7 +113,7 @@ const Nav = () => {
       {/* mobile/tablet view */}
       <div className="flex-between w-screen mt-4 px-6 sm:px-16  visible lg:hidden">
         <a
-          href="/"
+          href="./"
           className="text-primary-orange flex flex-center gap-2 font-bold font-satoshi text-lg  td hover:scale-95"
         >
           <div className="h-16 w-16">
@@ -151,11 +151,11 @@ const Nav = () => {
                 : "dropdown-exit dropdown-exit-active"
             } px-8 py-4 rounded-xl flex items-start justify-center flex-col gap-8 border-2 border-orange-100 shadow-lg bg-white w-56 absolute right-6 top-20 overflow-hidden`}
           >
-            <a href="/#Services">Our Services</a>
-            <a href="/#Packages">Packages</a>
-            <a href="/#TopFixers">Top Fixers</a>
-            {/* <a href="/#">Contact Us</a> */}
-            <a href="/Login">
+            <a href="#Services">Our Services</a>
+            <a href="#Packages">Packages</a>
+            <a href="#TopFixers">Top Fixers</a>
+            {/* <a href="#">Contact Us</a> */}
+            <a href="./Login">
               <NavButton
                 action={"Log In / Sign Up"}
                 borderColor={"border-primary-blue"}
