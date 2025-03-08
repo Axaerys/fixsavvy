@@ -2,7 +2,7 @@ import FixerCard from "./FixerCard";
 // import image1 from "@public/fixers/Bing.png";
 // import image2 from "@public/fixers/Bob.png";
 // import image3 from "@public/fixers/Daei.png";
-import tempImage from "@public/fixers/sampleImage.jpg";
+import tempImage from "@public/sampleImage.jpg";
 
 const TopFixers = () => {
   return (
