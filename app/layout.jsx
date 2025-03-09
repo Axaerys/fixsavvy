@@ -11,9 +11,9 @@ export const metadata = {
 const RootLayout = ({ children }) => {
   return (
     <html lang="en">
-      <head>
+      {/* <head>
         <link rel="icon" href="/favicon.ico" />
-      </head>
+      </head> */}
 
       <body suppressHydrationWarning>
         <Nav />
