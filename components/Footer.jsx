@@ -1,10 +1,20 @@
+"use client";
 import InstaIcon from "@public/InstaIcon";
 import LinkedInIcon from "@public/LinkedInIcon";
 import TwitterIcon from "@public/TwitterIcon";
+import { motion } from "framer-motion";
+import { footerVariants } from "../utils/motion";
 
 const Footer = () => {
   return (
-    <section className="bg-gray-900 relative bottom-0 w-screen" id="Footer">
+    <motion.section
+      variants={footerVariants}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+      className="bg-gray-900 relative bottom-0 w-screen"
+      id="Footer"
+    >
       <div className="sm:px-16 px-6 w-screen max-w-7xl mx-auto py-12 flex-between !items-start max-md:flex-col">
         <div className="md:w-[32%] max-md:mb-6">
           <h1 className="  font-inter font-bold  text-slate-300">
@@ -130,7 +140,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

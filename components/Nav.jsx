@@ -3,6 +3,8 @@ import { useState, useRef, useEffect } from "react";
 import NavButton from "./NavButton";
 import Image from "next/image";
 import logoImage from "@public/logo.png";
+import { motion } from "framer-motion";
+import { navVariants } from "../utils/motion";
 
 const Nav = () => {
   // const [scrolled, setScrolled] = useState(false);
@@ -59,7 +61,11 @@ const Nav = () => {
   }, []);
 
   return (
-    <section
+    <motion.section
+      variants={navVariants}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
       className={
         `absolute top-0 w-full flex-center bg-white z-20 h-16 font-satoshi py-12 `
         // ${scrolled ? "shadow-md" : "shadow-none"} move this above to work
@@ -166,7 +172,7 @@ const Nav = () => {
         </div>
         {/* hamburger menu end */}
       </div>
-    </section>
+    </motion.section>
   );
 };
 

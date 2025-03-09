@@ -5,7 +5,7 @@ import StarIcon from "@public/StarIcon";
 const FixerCard = ({ borderColor, name, rating, votes, image }) => {
   return (
     <section
-      className={`min-h-[22rem] w-[32%] max-md:w-full max-md:mb-8 flex-center flex-col rounded-3xl border-[1px] ${borderColor}  shadow-lg px-6 py-6 hover:scale-105 td`}
+      className={` max-md:mb-8 flex-center flex-col rounded-3xl border-[1px] ${borderColor}  shadow-lg px-6 py-6 hover:scale-105 td`}
     >
       <div
         className={`w-36 h-36 overflow-hidden object-cover border-[2px] ${borderColor} rounded-full`}

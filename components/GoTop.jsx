@@ -31,7 +31,7 @@ const GoTop = () => {
         isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
     >
-      <div className="w-12 h-12 border-4 border-primary-blue bg-white rounded-full flex-center">
+      <div className="w-8 h-8 border-4 border-primary-blue bg-white rounded-full flex-center">
         <div className="arrow" />
       </div>
     </section>

@@ -1,12 +1,25 @@
+"use client";
+
 import HeroButton from "./HeroButton";
 import heroImage from "@public/heroImage.png";
 import Image from "next/image";
-import AppleIcon from "@components/AppleIcon.jsx";
+
+import { motion } from "framer-motion";
+import { slideIn, staggerContainer, textVariant } from "../utils/motion";
 
 const Hero = () => {
   return (
-    <section className="flex justify-between items-center h-screen w-full">
-      <div className="w-[50%] max-md:w-full flex flex-col gap-8 ">
+    <motion.section
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
+      className="flex justify-between items-center h-screen w-full"
+    >
+      <motion.div
+        variants={textVariant(0.75)}
+        className="w-[50%] max-md:w-full flex flex-col gap-8 "
+      >
         <h1 className="text-7xl max-md:text-6xl font-bold cursor-default">
           Welcome to{" "}
           <div className="orange_gradient font-inter flex py-4 -my-4 ">
@@ -47,8 +60,12 @@ const Hero = () => {
             />
           </a>
         </div>
-      </div>
-      <div className="w-[40%] max-md:hidden">
+      </motion.div>
+
+      <motion.div
+        variants={slideIn("right", "spring", 0.5, 2)}
+        className="w-[40%] max-md:hidden"
+      >
         <Image
           src={heroImage}
           alt="Description of the hero image"
@@ -56,8 +73,8 @@ const Hero = () => {
           width={500}
           height={300}
         />
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 };
 

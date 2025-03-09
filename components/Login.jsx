@@ -1,8 +1,16 @@
-import React from "react";
+"use client";
+import { motion } from "framer-motion";
+import { zoomIn } from "../utils/motion";
 
 const Login = () => {
   return (
-    <section className="loginSection min-h-screen  font-inter mt-8 -mb-8">
+    <motion.section
+      variants={zoomIn(0.3, 1)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
+      className="loginSection min-h-screen  font-inter mt-8 -mb-8"
+    >
       <div className="loginMain shadow-lg border-orange-100 border-2">
         <input
           className="loginInput hover:scale-95 td focus:scale-100"
@@ -99,7 +107,7 @@ const Login = () => {
           </form>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

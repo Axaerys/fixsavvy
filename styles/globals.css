@@ -139,14 +139,15 @@
 
 .arrow{
   position: relative;
-  top: 0.25rem;
+  top: 0.20rem;
+  right: 0px;
   border: solid #1E3A5F;
-  border-width: 0 5px 5px 0;
+  border-width: 0 4px 4px 0;
   display: inline-block;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   transform: rotate(-135deg);
 }
 
